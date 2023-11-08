@@ -140,7 +140,37 @@ class _HomePageState extends State<HomePage> {
                                         size: 40,
                                       ),
                                       onPressed: () {
-                                        _store.removeText(index);
+                                        showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: const Text(
+                                                'Confirmar exclusão',
+                                              ),
+                                              content: const Text(
+                                                'Tem certeza de que deseja excluir este item?',
+                                              ),
+                                              actions: <Widget>[
+                                                TextButton(
+                                                  onPressed: () => Get.back(),
+                                                  child: const Text('Cancelar'),
+                                                ),
+                                                TextButton(
+                                                  onPressed: () {
+                                                    _store.removeText(index);
+                                                    Get.back();
+                                                  },
+                                                  child: const Text(
+                                                    'Excluir',
+                                                    style: TextStyle(
+                                                      color: Colors.red,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ],
+                                            );
+                                          },
+                                        );
                                       },
                                     ),
                                   ],

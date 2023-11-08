@@ -75,6 +75,7 @@ class LoginPage extends GetView<LoginController> {
                       onChanged: (value) {
                         controller.password.value = value;
                       },
+                      obscureText: true,
                       decoration: InputDecoration(
                         fillColor: Colors.white,
                         filled: true,
