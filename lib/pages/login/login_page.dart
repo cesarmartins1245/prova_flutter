@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:prova_flutter/pages/home/home_page.dart';
 import 'package:prova_flutter/pages/login/login_controller.dart';
 
 class LoginPage extends GetView<LoginController> {
@@ -89,6 +90,7 @@ class LoginPage extends GetView<LoginController> {
                       child: ElevatedButton(
                         onPressed: () {
                           if (controller.checkFields()) {
+                            Get.to(HomePage());
                           } else {
                             Get.snackbar(
                               'Erro ao fazer login',
