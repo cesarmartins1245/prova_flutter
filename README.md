@@ -42,3 +42,6 @@ A tela deve salvar as informações digitadas pelo usuário em um card, listando
 - As informações precisam ser salvas e lidas utilizando a biblioteca shared_preferences (https://pub.dev/packages/shared_preferences)
 - O Ícone de excluir deve abrir um pop-up confirmando a ação.
 - Obrigatória a utilização do plugin MOBX para a construção da tela.
+
+### APK
+- Google Drive: https://drive.google.com/file/d/12hvs1jWy4epnOzJltw6cdK_ZBSEB6ILd/view?usp=sharing
