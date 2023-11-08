@@ -44,4 +44,5 @@ A tela deve salvar as informações digitadas pelo usuário em um card, listando
 - Obrigatória a utilização do plugin MOBX para a construção da tela.
 
 ### APK
+- Os desenvolvimentos foram feitos e testados atráves de emulação de um smartphone Android, para poder testar baixe do link do google drive e instale no seu celular.
 - Google Drive: https://drive.google.com/file/d/12hvs1jWy4epnOzJltw6cdK_ZBSEB6ILd/view?usp=sharing
